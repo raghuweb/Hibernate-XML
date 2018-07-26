@@ -8,7 +8,7 @@ import org.hibernate.classic.Session;
 public class Test {
 	public static void main(String[] args) {
 		Configuration cfg = new Configuration();
-		cfg = cfg.configure();
+		cfg.configure();
 		SessionFactory sf = cfg.buildSessionFactory();
 		Session ses = sf.openSession();
 		Transaction tx = ses.beginTransaction();
